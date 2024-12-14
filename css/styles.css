@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --unhover: #191e1f;
+    --hover: #FFFFFF;
+    --width: 600px;
+
+    font-family: Monospace, sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #41cbe0, #61d6e8, #23c0d9);
+    margin: 0;
+    padding: 0;  
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5vh;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #FFFFFF;
+    font-weight: 900;
+    text-shadow: 5px 3px #191e1f;
+    margin-bottom: 0;
+    text-wrap: nowrap;
+    padding: 0; 
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    flex: 1;
+    max-height: 95%;
+    text-wrap: nowrap;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #191e1f;
+    background: linear-gradient(90deg, #41cbe0, #61d6e8, #23c0d9);
+    border: 5px solid #191e1f;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+button:hover, .selected-btn {
+    background: linear-gradient(90deg, #0569a3, #2f6bda, #067dc2);
+    color: white;
+}
+
+#editor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: var(--width);
+    max-width: var(--width);
+    height: auto;
+    justify-content: flex-start;
+    border-radius: 8px;
+    border: 8px solid black;
+    touch-action: none;
+}
+
+#controls {
+    width: var(--width);
+    max-width: var(--width);
+    min-height: 5em;
+    height: 10vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1vh;
+}
+
+#pallete {
+    min-height: var(--width);
+    max-height: var(--width);
+    min-width: 5em;
+    width: 10vh;
+    max-width: 8em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#controls, #pallete {
+    flex: 1;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 8px solid #191e1f;
+    display: flex;
+    gap: 16px;
+}
+
+#controls img {
+    width: 30px;
+    height: 100%;
+}
+
+.pallete {
+    width: 80%;
+    flex: 1;
+}
+
+.selected {
+    border: 4px solid #191e1f;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.pixel {
+    flex: 1;
+    align-self: stretch;
+    background-color: #FFFFFF;
+}
+
+.pixel:hover {
+    background-color: var(--pen-color);
+    opacity: 0.74;
+}
