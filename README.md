@@ -33,8 +33,8 @@ Only by user input <a href="">*(Re-size Tool)*</a> can how the grid be divided i
     **Desktop Only**: Hovering over a pixel in the grid with your mouse pointer shows a lighter tone of the same color you have selected with the color <a href="#pallete">*pallete*</a>.
 
 2) ### Eraser Tool 
-    > [!NOTE]
-    > **COMING SOON**
+> [!NOTE]
+> **COMING SOON**
 
 3) ### Clear Tool
     Refreshes entire grid, erasing altered pixels in the process.
